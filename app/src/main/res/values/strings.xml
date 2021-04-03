@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TodoApp</string>
+    <string name="id_placeholder">id placeholder</string>
+    <string name="remaining_tasks">Uncompleted tasks:</string>
+    <string name="user">User:</string>
+    <string name="incomplete_task">Incomplete Task</string>
+    <string name="completed_tab">Completed</string>
+    <string name="incomplete_tab">Incomplete</string>
+    <string name="error">Unexpected Err</string>
+    <string name="error_message">Opppps! An error occurred, please try later!</string>
+    <string name="positive_button_label">Sure</string>
+</resources>

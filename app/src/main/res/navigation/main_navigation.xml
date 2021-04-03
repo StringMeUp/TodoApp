@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/todoFragment">
+
+    <fragment
+        android:id="@+id/todoFragment"
+        android:name="com.string.me.up.todohiltassignment.ui.todo.TodoFragment"
+        android:label="fragment_todo"
+        tools:layout="@layout/fragment_todo">
+        <action
+            android:id="@+id/action_todoFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.string.me.up.todohiltassignment.ui.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="userId"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+</navigation>
