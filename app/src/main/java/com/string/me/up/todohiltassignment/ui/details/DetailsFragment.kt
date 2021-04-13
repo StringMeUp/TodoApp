@@ -14,8 +14,7 @@ import com.string.me.up.todohiltassignment.R
 import com.string.me.up.todohiltassignment.adapters.PagerAdapter
 import com.string.me.up.todohiltassignment.databinding.FragmentDetailsBinding
 import com.string.me.up.todohiltassignment.helper.Helper
-import com.string.me.up.todohiltassignment.ui.pagerfragments.CompletedTodoFragment
-import com.string.me.up.todohiltassignment.ui.pagerfragments.IncompleteTodoFragment
+import com.string.me.up.todohiltassignment.ui.pagerfragments.ReusableFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -50,8 +49,8 @@ class DetailsFragment : Fragment() {
         })
 
         val pagerAdapter = PagerAdapter(this).also {
-            it.addFragment(CompletedTodoFragment())
-            it.addFragment(IncompleteTodoFragment())
+            it.addFragment(ReusableFragment(getString(R.string.completed_todo_fragment)))
+            it.addFragment(ReusableFragment(getString(R.string.incomplete_todo_fragment)))
         }
 
         binding.todoViewPager.adapter = pagerAdapter

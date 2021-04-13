@@ -9,4 +9,6 @@
     <string name="error">Unexpected Err</string>
     <string name="error_message">Opppps! An error occurred, please try later!</string>
     <string name="positive_button_label">Sure</string>
+    <string name="completed_todo_fragment">Fragment Completed Todo</string>
+    <string name="incomplete_todo_fragment">Fragment Incomplete Todo</string>
 </resources>
