@@ -23,6 +23,7 @@ class ReusableFragment(var nameTag: String) : Fragment(R.layout.reusable_layout)
         val completedAdapter = ProgressAdapter()
         binding.reusableRecycler.apply { adapter = completedAdapter }
 
+        //set different observer for different fragment
         if (nameTag == getString(R.string.completed_todo_fragment)) {
             sharedViewModel.singleUserTodoList.observe(viewLifecycleOwner, { completedTodos ->
                 completedTodos?.let {
